@@ -4,6 +4,10 @@
     padding:0;
     margin:0;
     font-family: 'Poppins', sans-serif;
+    
+}
+html{
+    scroll-behavior:smooth; 
 }
 
 header .navbar{
@@ -21,6 +25,9 @@ header .navbar-brand{
 }
 #navbarSupportedContent>ul>li:nth-child(n)>.nav-link:hover{
     color:#00BF85;
+}
+#navbarSupportedContent>ul>li:nth-child(n)>a.active{
+    color:#00BF85!important;
 }
 #navbarSupportedContent>button{
     background-color:#00BF85 ;
@@ -111,3 +118,134 @@ header .navbar-brand{
 .about{
     background:#000;
 }
+/* discovred  */
+.discover .title{
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    flex-direction:column;
+    margin:auto;
+}
+.discover .title h6{
+    font-size:1rem;
+    color:#00BF85;
+    font-weight:800;
+    letter-spacing:2px;
+}
+.discover .title h1
+{
+    color:#111;
+    font-weight:700;
+    font-size:1.7rem;
+
+
+}
+.discover .title p
+{
+    color:#111;
+    font-weight:400;
+    font-size:1.1rem;
+    letter-spacing:.5px;
+
+}
+.discover .title a
+{
+    background-color:#00BF85 ;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration:none;
+    color:#111;
+
+}
+.service-boite{
+    width:40%;
+    border-radius: 5px;
+}
+.service-boite.text-center.d-flex.flex-column {
+    width: 20%;
+    padding: 10px 0px 0px 40px;
+  }
+  .service-boite h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .service-boite p{
+      font-size: 0.9rem;
+      font-weight: 400;
+  }
+  .service{
+      background-color: #000;
+      height:100vh;
+  }
+  /* sign in */
+  #sign-in{
+      background-color:white;
+  }
+  #sign-in h6,#sign-in h1{
+      color:#111;
+  }
+  #sign-in p{
+      color:rgb(180, 180, 180);
+  }
+  #sign-in a{
+      color:#fff;
+      background-color: rgb(63, 61, 61);
+      font-size: 0.9rem;
+      font-style:italic ;
+      font-weight: 400;
+      padding: 0.5rem 2rem;
+  }
+  .list-unstyled li a{
+     color: blue!important;;
+     background-color: none!important;
+  }
+  footer{
+      background-color: #000;
+  }
+  footer h5{
+      color:white;
+  }
+  .list-unstyled li a:hover{
+      text-decoration: none;
+  }
+  .service h2 {
+    padding-top: 20px;
+  }
+  
+  @media screen and (max-width:900px){
+    header .navbar {
+        padding: 1rem;
+      
+      }
+      .nav-item {
+     padding: 0.7rem 0;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > .nav-link {
+          padding: 0;
+        }
+        #navbarSupportedContent > button {
+          
+            padding: 0.4rem 0.7rem;
+           
+          }
+          #service {
+            height: 60vh;
+          }
+          .text-light.display-4.font-weight-bold {
+            font-size: 39px;
+          }
+          .hero p {
+            font-size: 0.9rem;
+          }
+          .hero > a {
+            font-size: 0.9rem;
+          }
+
+  }
+  @media screen and (max-width:500px){
+    #service {
+        height: 100%;
+      }
+
+  }
